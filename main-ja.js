@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '今日、Bobの:insertx:は友達とお出かけです。天気は:inserty:。昨晩チェックした天気予報は:insertz:。さて、:insertx:はというと、早く目が覚めたため、滅多にない優雅な朝食。すると突然、:inserta:結局、いつも通りギリギリの5min.前に家を飛び出して行く羽目になりました。';
+let storyText = '今日、Bobの:insertx:は友達とお出かけです。天気は:inserty:。昨晩チェックした天気予報は:insertz:。さて、:insertx:はというと、早く目が覚めたため、滅多にない優雅な朝食。すると突然、:inserta:結局、いつも通りギリギリの5min前に家を飛び出して行く羽目になりました。';
 let insertX = ['お姉さん','お兄ちゃん','弟'];
 let insertY = ['晴れ','曇り','雨'];
 let insertZ = ['はずれました','大当たり','ちょっとだけずれてました'];
@@ -36,7 +36,7 @@ function result() {
 
   if(document.getElementById("日本").checked) {
     const minute = Math.round(10*0.291349) + '分';
-    newStory = newStory.replace('5min.',minute);
+    newStory = newStory.replace('5min',minute);
   }
 
   story.textContent = newStory;
